@@ -1,0 +1,64 @@
+"*":
+  "atom-beautify":
+    c:
+      configPath: "/home/piyushdivyankar/Desktop/DDP-12D110009/objc.cfg"
+    general:
+      _analyticsUserId: "a4261cbd-a365-4778-8eb5-91eb84e2f78a"
+  core:
+    disabledPackages: [
+      "autocomplete-css"
+      "autocomplete-html"
+      "background-tips"
+      "language-clojure"
+      "language-coffee-script"
+      "language-csharp"
+      "language-css"
+      "language-go"
+      "language-html"
+      "language-hyperlink"
+      "language-java"
+      "language-javascript"
+      "language-json"
+      "language-less"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-property-list"
+      "language-python"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sass"
+      "language-sql"
+      "language-toml"
+      "language-xml"
+      "language-yaml"
+      "link"
+      "metrics"
+      "atom-focus-mode"
+      "minimap-highlight-selected"
+    ]
+    themes: [
+      "one-dark-ui"
+      "monokai-seti"
+    ]
+  editor:
+    fontSize: 15
+    tabLength: 4
+  "exception-reporting":
+    userId: "05dbd043-9534-cee7-5ed1-848ef264fbb6"
+  linter:
+    errorPanelHeight: 83
+  "linter-python":
+    executablePath: "/usr/local/bin/pylama"
+    withMcCabe: true
+    withPep257: true
+    withPep8: true
+    withPyflakes: true
+    withPylint: true
+  minimap: {}
+  "todo-show": {}
+  welcome:
+    showOnStartup: false
+".doxyfile.source":
+  editor:
+    tabLength: 4

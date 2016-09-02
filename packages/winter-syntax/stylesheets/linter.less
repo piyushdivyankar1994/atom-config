@@ -1,0 +1,27 @@
+:host {
+
+  .gutter.linter-gutter-enabled .line-number {
+    &.linter-warning:before {
+      color: @orange;
+    }
+
+    &.linter-error:before {
+      color: @red;
+    }
+  }
+
+  .linter-highlight.error,
+  .highlight.linter-error {
+    .region {
+      border-color: @red;
+    }
+  }
+
+  .linter-highlight.warning,
+  .highlight.linter-warning {
+    .region {
+      border-color: @orange;
+    }
+  }
+
+}

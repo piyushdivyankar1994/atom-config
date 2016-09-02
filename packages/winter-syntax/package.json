@@ -1,0 +1,35 @@
+{
+  "name": "winter-syntax",
+  "theme": "syntax",
+  "version": "2.2.5",
+  "private": true,
+  "description": "A light theme with cool colors for the Atom editor.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewwithanm/atom-winter-syntax.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "readme": "# Winter Syntax Theme\n\nThis is a light theme inspired by Chris Thomas's Mac Classic TextMate theme. It\nuses the cool colors for syntax highlighting and reserves the warm colors for\nerrors.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/matthewwithanm/atom-winter-syntax/issues"
+  },
+  "homepage": "https://github.com/matthewwithanm/atom-winter-syntax#readme",
+  "_id": "winter-syntax@2.2.5",
+  "_shasum": "07c8030f0aa0cb0bb2b883ad823cbe1c7b122ddd",
+  "_resolved": "file:../d-116717-22262-1rt5ajt/package.tgz",
+  "_from": "../d-116717-22262-1rt5ajt/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

@@ -1,0 +1,249 @@
+:host {
+
+  .comment {
+    color: fade(@gray, 75%);
+    font-style: italic;
+  }
+
+  .string {
+    color: @green;
+
+    // String interpolation in Ruby, CoffeeScript, and others
+    .source,
+    .meta.embedded.line,
+    .punctuation.section.embedded {
+      color: @bright-green;
+    }
+  }
+
+  .regexp {
+    &,
+    .constant {
+      &,
+      &.other,
+      &.character-class,
+      &.range,
+      &.regexp {
+        color: @green;
+      }
+    }
+  }
+
+  .constant {
+    color: @bright-blue;
+
+    &.rgb-value,
+    &.numeric {
+      color: @purple;
+    }
+
+    &.language {
+      color: @plum;
+      font-weight: bold;
+    }
+
+    &.symbol,
+    &.character {
+      color: @purple;
+    }
+
+    &.placeholder {
+      color: @bright-green;
+    }
+  }
+
+  .variable {
+    color: @bright-blue;
+
+    &.object {
+      color: @syntax-text-color;
+    }
+
+    &.parameter {
+      font-style: italic;
+      color: @teal;
+      font-weight: normal;
+    }
+
+    &.magic,
+    &.language {
+      color: @plum;
+    }
+  }
+
+  .keyword {
+    color: @plum;
+    font-weight: bold;
+  }
+
+  .separator {
+    color: @plum;
+  }
+
+  .operator,
+  .arrow {
+    color: @plum;
+  }
+
+  .storage {
+    color: @purple;
+  }
+
+  .module.keyword,
+  .import .keyword,
+  .keyword.import, // Python
+  .storage.function {
+    color: @purple;
+    font-weight: bold;
+  }
+
+  // TODO and FIXME notes
+  .storage {
+    &.fixme,
+    &.todo {
+      color: @red;
+    }
+  }
+
+  .class.name,
+  .type.name {
+    text-decoration: underline;
+  }
+
+  // Open and close parens, curlies, HTML <s, etc.
+  .begin,
+  .end {
+
+    &,
+    &.tag {
+      color: @syntax-text-color;
+    }
+  }
+
+  // HTML
+  .tag {
+    // So the equals sign will be plum since it doesn't get its own class for
+    // some reason.
+    color: @plum;
+
+    &.name.tag {
+      color: @blue;
+    }
+
+    &.punctuation {
+      color: @syntax-text-color;
+    }
+
+    .curly {
+      color: @syntax-text-color;
+    }
+
+    .attribute-name {
+      font-style: italic;
+      color: @teal;
+    }
+  }
+
+  .jsx {
+    color: @syntax-text-color;
+
+    .operator {
+      color: @plum;
+    }
+  }
+
+  .key {
+    .string {
+      color: @teal;
+    }
+  }
+
+  .function,
+  .method {
+
+    .function.name {
+      color: @blue;
+      font-weight: bold;
+    }
+
+    // Parameters & Default Values
+    .variable {
+      font-weight: normal;
+    }
+
+    // Parameters
+    .storage.variable {
+      color: @teal;
+      font-style: italic;
+    }
+  }
+
+  .function-call {
+
+    &,
+    & .function.name {
+      color: @blue;
+      font-weight: normal;
+    }
+
+    .braces {
+      color: @syntax-text-color;
+    }
+  }
+
+
+  .json {
+    // Keys
+    .dictionary > .string {
+      color: @teal;
+      font-style: italic;
+    }
+
+    .dictionary.value > .string {
+      color: @green;
+      font-style: normal;
+    }
+  }
+
+  // CSS Styles
+  .css {
+    .attribute-name {
+      // Like functions!
+      color: @blue;
+      font-weight: bold;
+    }
+
+    .property-name {
+      // Like arguments!
+      color: @teal;
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+
+  // Markdown
+  .gfm {
+    .heading {
+      color: @blue;
+      font-weight: bold;
+    }
+
+    .link {
+      color: @plum;
+      text-decoration: underline;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .list {
+      color: @bright-blue;
+    }
+  }
+
+}

@@ -1,0 +1,46 @@
+'scopeName': 'source.doxyfile'
+'name': 'Doxyfile'
+'fileTypes': [
+  'Doxyfile',
+  'Doxyfile.in'
+  'CMakeDoxyfile.in'
+]
+'patterns': [
+
+  {
+    'match': '^(\\w+)[ \\t]*\\+?='
+    'captures':
+      '1':
+        'name': 'variable.other.doxyfile'
+  }
+
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.quoted.double.doxyfile'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escaped.doxyfile'
+      }
+    ]
+  }
+
+  {
+    'begin': '\''
+    'end': '\''
+    'name': 'string.quoted.single.doxyfile'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escaped.doxyfile'
+      }
+    ]
+  }
+
+  {
+    'match': '^\\s*#.*$'
+    'name': 'comment.block.doxyfile'
+  }
+
+]

@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Reset count'
+      'command': 'key-count:reset'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Statusbar Key Count'
+      'submenu': [
+        {
+          'label': 'Reset count'
+          'command': 'key-count:reset'
+        }
+      ]
+    ]
+  }
+]

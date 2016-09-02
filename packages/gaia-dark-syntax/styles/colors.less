@@ -1,0 +1,49 @@
+// Gaia Syntax Theme
+
+// Color scheme -----------------------------------
+
+@dbg: #2D2E2F; // Dark background
+@dhl: #3D3E3F; // Dark highlight
+@dt2: #7D7E7F; // Dark bg text secondary
+@dt1: #ADAEAF; // Dark bg text primary
+
+@lbg: #EBEDDF; // Light background
+@lhl: #DBDDCF; // Light highlight
+@lt2: #9B9D8F; // Light bg text secondary
+@lt1: #6B6D5F; // Light bg text primary
+
+@red: #9D6936; // Red
+@ora: #BD8A21; // Orange
+@gre: #9B9C2A; // Green
+@blu: #6C9CBA; // Blue
+
+@mag: #BD9198; // Magenta
+@yel: #BDAA4A; // Yellow
+@cya: #85AF85; // Cyan
+@vio: #8A8DB7; // Violet
+
+// Variables -----------------------------------
+
+@text-1: @dt1; // text primary
+@text-2: @dt2; // text secondary
+
+@color-1: @red; // color primary
+@color-2: @gre; // color secondary
+@color-3: @ora; // color tertiary
+
+@support-1: @cya; // support primary
+@support-2: @yel; // support secondary
+
+@accent-1: @blu; // accent primary
+@accent-2: @vio; // accent secondary
+@accent-3: @mag; // accent tertiary
+
+// Base vars -----------------------------------
+
+@syntax-fg: @text-1; // text primary
+@syntax-accent: @accent-1; // accent primary
+@syntax-bg: @dbg; // background
+@syntax-guide: @dhl; // background highlight
+@syntax-selection: @syntax-guide;
+@syntax-selection-gutter: @syntax-guide;
+@syntax-cursor-line: fade(@syntax-selection, 26%); // needs to be semi-transparent to show serach results

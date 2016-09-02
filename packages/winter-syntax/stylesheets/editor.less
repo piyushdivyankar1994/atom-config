@@ -1,0 +1,92 @@
+:host {
+
+  &,
+  .gutter {
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
+  }
+
+
+  .cursor-line {
+    .invisible-character {
+      color: @syntax-invisible-character-color;
+    }
+  }
+
+  .indent-guide {
+    box-shadow: inset 1px 0 @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: transparent;
+  }
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .gutter {
+    color: @syntax-gutter-text-color;
+    background: @syntax-gutter-background-color;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: #e87b00;
+  }
+
+  .invisible {
+    color: #555;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  &.is-focused {
+    .cursor {
+      border-color: @syntax-cursor-color;
+    }
+
+    .selection .region {
+      background-color: @syntax-selection-color;
+    }
+
+    .line-number.cursor-line-no-selection,
+    .line.cursor-line {
+      background-color: @syntax-gutter-background-color-selected;
+      background-color: fade(@gray, 5%);
+    }
+  }
+
+  .search-results .marker .region {
+    background-color: transparent;
+    border: 1px solid @syntax-result-marker-color;
+  }
+  .search-results .marker.current-result .region {
+    border: 1px solid @syntax-result-marker-color-selected;
+  }
+
+}
+
+.bracket-matcher .region {
+  background-color: #C9C9C9;
+  opacity: 0.7;
+  border-bottom: 0 none;
+}
+
+// Some nuclide hackery.
+// TODO: Better way to do this?
+
+.nuclide-diagnostics-gutter-ui-gutter-warning {
+  color: @orange;
+}
+
+atom-text-editor:not(.mini)::shadow .lines div.line span.trailing-whitespace {
+  background: @orange-highlight;
+}
+
+atom-text-editor {
+  text-rendering: optimizeLegibility;
+}

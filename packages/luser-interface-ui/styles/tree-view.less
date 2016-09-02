@@ -1,0 +1,15 @@
+@import "ui-variables";
+
+.tree-view {
+  .status-added >.icon-file-text, .status-added > .header {
+    color: @text-color-git-added;
+  }
+
+  .status-modified > .icon-file-text, .status-modified > .header {
+    color: @text-color-git-modified;
+  }
+
+  .status-ignored > .icon-file-text, .status-ignored .header {
+    color: @text-color-git-ignored;
+  }
+}

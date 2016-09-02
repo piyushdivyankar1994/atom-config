@@ -1,0 +1,34 @@
+{
+  "name": "printen-syntax",
+  "theme": "syntax",
+  "version": "0.1.1",
+  "description": "Inspired by a syntax theme from Cot Editor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smlombardi/Printen-Syntax.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "readme": "# printen-syntax theme\n\nA dark, subtle theme for front-end work.  Inspired by the dark feault theme from the [Cot Editor](http://coteditor.com/).\n\n## Screenshots\n\n\n###SCSS\n![image](https://github.com/smlombardi/Printen-Syntax/blob/master/screenshots/sass.png?raw=true)\n\n###HTML\n![image](https://github.com/smlombardi/Printen-Syntax/blob/master/screenshots/html.png?raw=true)\n\n###JS\n![image](https://github.com/smlombardi/Printen-Syntax/blob/master/screenshots/js.png?raw=true)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/smlombardi/Printen-Syntax/issues"
+  },
+  "homepage": "https://github.com/smlombardi/Printen-Syntax#readme",
+  "_id": "printen-syntax@0.1.1",
+  "_shasum": "fa3bc463acef53b555cf566c26e2a25bd38188f2",
+  "_resolved": "file:../d-116717-22359-1gfpisx/package.tgz",
+  "_from": "../d-116717-22359-1gfpisx/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

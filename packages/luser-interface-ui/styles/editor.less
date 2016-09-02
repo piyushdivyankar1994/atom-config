@@ -1,0 +1,45 @@
+@import "ui-variables";
+@import "ui-mixins";
+
+atom-text-editor, atom-text-editor::shadow, atom-text-editor[mini], atom-text-editor[mini]::shadow {
+  background-color: darken(@input-background-color, 1%);
+  border: 2px solid lighten(@input-background-color, 5%);
+
+  .placeholder-text {
+    color: @text-color-placeholders;
+  }
+
+  .gutter {
+    background-color: darken(@input-background-color, 1%);
+    .line-numbers {
+      background: transparent !important;
+    }
+
+    .line-number {
+      background: transparent;
+      background-color: darken(@input-background-color, 2%);
+      color: @text-color;
+
+      &.cursor-line {
+        background-color: lighten(@input-background-color, 1%);
+        color: lighten(@text-color, 50%);
+      }
+
+      &.git-line-modified {
+        color: @text-color-git-modified;
+      }
+
+      &.git-line-removed {
+        color: @text-color-git-removed;
+      }
+
+      &.git-line-added {
+        color: @text-color-git-added;
+      }
+    }
+  }
+}
+
+atom-text-editor.is-focused, atom-text-editor.is-focused::shadow {
+  background-color: @input-background-color;
+}

@@ -1,0 +1,24 @@
+@import "ui-variables";
+
+.tab-bar {
+  background: @tab-bar-background-color;
+  height: @tab-height;
+  width: 100%;
+  display: table;
+
+  .tab {
+    height: @tab-height - 2;
+    display: table-cell;
+    text-align: center;
+    color: @tab-text-color;
+    line-height: @tab-height - 2;
+
+    &:hover {
+      color: darken(@tab-text-color-selected, 3%);
+    }
+  }
+
+  .tab.active, .tab:hover.active {
+    color: @tab-text-color-selected;
+  }
+}
